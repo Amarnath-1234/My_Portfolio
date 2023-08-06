@@ -5,9 +5,10 @@
     padding: 0;
 }
 .sidebar{
-    background-color:rgb(191, 191, 192);
-    width: 430px;
+    background-color:rgb(159, 115, 181);
+    /* width: 430px; */
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
     height: 100vh;
 } 
 .sidebar nav{
@@ -33,8 +34,8 @@
 
 .infoContainer{
     display: flex;
-    /* background-color: yellow; */
-    width: 80vw;
+    background-color: White;
+    width: 65vw;
     height: 55vh;
     margin: 100px auto;
     justify-content: space-around;
@@ -47,8 +48,8 @@
     font-family: 'Prompt', sans-serif;
 }
 .devPic img{
-    width:200px;
-    height: 55vh;
+    width:430px;
+    height: 75vh;
 }
 
 .hello{
@@ -71,7 +72,7 @@
     margin-top: 30px;
 }
 .buttons :hover{
-    background-color: white;
+    background-color:white;
     color: blue;
 }
 .buttons button{
@@ -85,20 +86,88 @@
     cursor: pointer;
 }
 
+.btn-sm:hover{
+    background-color: white;
+    color: blue;
+}
+
+.btn-sm{
+    border-radius: 25px;
+    color: black;
+    background-color: rgb(112, 112, 235);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 15px 0;
+}
 .contactform{
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 140px;
     padding: 0 34px;
+    padding-top: 140px;
 }
 .contactform h1{
     font-family: 'Prompt', sans-serif;
-    text-align: center;
+    padding: 15px 0;
 }
 .contactform form div{
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
+
+.contactform form div input{
+    width:25vw;
+    border-radius: 6px;
+    margin: 5px 0 0; 
+    padding: 6px; 
+}
+
 #emailHelp{
-    font-size: 8px;
-    color: rgb(37, 28, 28);
+    font-size: 10px;
+    color: rgb(56, 108, 136);
     margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;    
+}
+#form-check input{
+    width: 20px;
+    margin: 1px 0;
+}
+
+h1{
+    font-family: 'Prompt', sans-serif;
+    padding: 15px 0;
+}
+
+.intro h2{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px;
+}
+
+.intro p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px;
+}
+
+.skillcontainer{
+    padding: 15px;
+}
+
+.skill{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+@media (max-width:1600px) {
+    
 }
