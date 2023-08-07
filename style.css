@@ -5,19 +5,28 @@
     padding: 0;
 }
 .sidebar{
+    position: absolute;
     background-color:rgb(159, 115, 181);
     /* width: 430px; */
     font-family: 'Josefin Sans', sans-serif;
-    text-decoration: underline;
     height: 100vh;
+    transition: transform 0.3s ease-in-out ;
 } 
+
+.sidebar a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sidebar a{
+    font-size: 25px;
+}
 .sidebar nav{
     padding: 10px;
 }
 .sidebar nav li{
     list-style: none;
     font-size: 20px;
-    padding: 30px;
+    padding: 50px;
 }
 .sidebar nav li a{
     text-decoration: none;
@@ -42,6 +51,7 @@
 }
 
 .devInfo{
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -51,25 +61,30 @@
     width:430px;
     height: 75vh;
 }
+.devPic{
+    display: flex;
+    align-items: center;
+}
 
 .hello{
-    font-size:50px;
+    font-size:3em;
     font-family: 'Prompt', sans-serif;
 }
 .name{
-    font-size: 40px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
 }
 .about{
-    font-size: 30px;
+    font-size: 2.5em;
 }
 .moreabout{
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 .buttons{
-    margin-top: 30px;
+    margin-top: 2.2em;
+    font-size: 6px;
 }
 .buttons :hover{
     background-color:white;
@@ -77,12 +92,12 @@
 }
 .buttons button{
     padding: 10px;
-    margin: 0 3px;
+    margin: 3px 3px;
     border-radius: 25px;
     color: black;
     background-color: rgb(112, 112, 235);
     font-weight: bold;
-    font-size: 10px;
+    font-size: 2em;
     cursor: pointer;
 }
 
@@ -105,6 +120,7 @@
     font-family: 'Josefin Sans', sans-serif;
     padding: 0 34px;
     padding-top: 140px;
+    margin: 0 90px;
 }
 .contactform h1{
     font-family: 'Prompt', sans-serif;
@@ -142,6 +158,9 @@ h1{
     padding: 15px 0;
 }
 
+.intro{
+    margin: 5rem 90px;
+}
 .intro h2{
     font-family: 'Josefin Sans', sans-serif;
     margin: 15px;
@@ -149,7 +168,8 @@ h1{
 
 .intro p{
     font-family: 'Josefin Sans', sans-serif;
-    margin: 15px;
+    padding: 15px;
+    margin-bottom: 4rem;
 }
 
 .skillcontainer{
@@ -161,13 +181,34 @@ h1{
     color: rgb(0, 0, 0);
 }
 
+.sidebarGo{
+    transform: translate(-444px, 0px);
+    position: absolute;
+}
 .hamburger{
     position: absolute;
     cursor: pointer;
-    top: 10px;
+    top: 5px;
     left: 10px;
+    margin-top: 5px;
+}
+.cross:hover{
+    width: 18px;
+}
+.ham:hover{
+    width: 23px;
+}
+.cross{
+    margin-left: 13rem;
+    margin-top: 5px;
 }
 
-@media (max-width:1600px) {
+@media (max-width:1000px) {
+    .devPic{
+       display: none;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
     
 }
