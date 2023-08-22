@@ -6,7 +6,7 @@
 }
 .sidebar{
     position: absolute;
-    background-color:rgb(159, 115, 181);
+    background-color:rgb(143, 192, 206);
     /* width: 430px; */
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
@@ -58,8 +58,8 @@
     font-family: 'Prompt', sans-serif;
 }
 .devPic img{
-    width:430px;
-    height: 75vh;
+    width:400px;
+    height: 65vh;
 }
 .devPic{
     display: flex;
@@ -165,11 +165,17 @@ h1{
     font-family: 'Josefin Sans', sans-serif;
     margin: 15px;
 }
-
+.intro h1{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
 .intro p{
     font-family: 'Josefin Sans', sans-serif;
     padding: 15px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .skillcontainer{
