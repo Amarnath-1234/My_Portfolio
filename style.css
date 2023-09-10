@@ -176,15 +176,19 @@ h1{
     margin: 5rem 90px;
 }
 .one{
-    background-image: url(bg3.avif);
+    background-image: url(images/bg3.avif);
     background-size: cover;
 }
 .header{
-    background-image: url(bg.jpg);
+    background-image: url(images/bg.jpg);
     background-size: cover;
 }
 .pro{
-    background-image: url(bg3.avif);
+    background-image: url(images/bg3.avif);
+    background-size: cover;
+}
+.cont{
+    background-image: url(images/bg3.avif);
     background-size: cover;
 }
 .intro h2{
